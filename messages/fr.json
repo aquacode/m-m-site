@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "gallery": "Galerie",
+    "journeys": "Voyages",
+    "blog": "Blog"
+  },
+  "home": {
+    "title": "Maryam & Michael",
+    "subtitle": "Notre histoire",
+    "heroImageAlt": "Maryam, Michael et leur fils lors d'un de leurs voyages",
+    "heroCta": "Explorer nos voyages",
+    "recentJourneys": "Voyages récents",
+    "recentPosts": "Du Blog",
+    "viewAll": "Voir tout"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "intro": "Nous sommes une famille de voyageurs — attirés par la mer, les villes anciennes et les histoires qui s'y trouvent."
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Une mosaïque de moments de nos voyages",
+    "grid": "Grille",
+    "masonry": "Mosaïque",
+    "noPhotos": "Photos à venir."
+  },
+  "journeys": {
+    "title": "Voyages",
+    "subtitle": "Chaque voyage raconte une histoire",
+    "noJourneys": "Voyages à venir.",
+    "viewJourney": "Voir le voyage",
+    "photos": "{count} photos"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Chroniques de la route et d'ailleurs",
+    "readMore": "Lire la suite",
+    "noPosts": "Articles à venir.",
+    "by": "Par {author}",
+    "minuteRead": "{minutes} min de lecture"
+  },
+  "footer": {
+    "copyright": "© {year} Maryam & Michael. Tous droits réservés.",
+    "tagline": "Un amour mutuel de la mer."
+  },
+  "common": {
+    "loading": "Chargement…",
+    "backToJourneys": "Retour aux voyages",
+    "backToBlog": "Retour au blog"
+  }
+}

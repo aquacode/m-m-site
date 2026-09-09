@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* ── Sea / Coastal palette ──────────────────── */
+  --color-sea-50:  #f0fdfa;
+  --color-sea-100: #ccfbf1;
+  --color-sea-200: #99f6e4;
+  --color-sea-300: #5eead4;
+  --color-sea-400: #2dd4bf;
+  --color-sea-500: #14b8a6;
+  --color-sea-600: #0d9488;
+  --color-sea-700: #0f766e;
+  --color-sea-800: #115e59;
+  --color-sea-900: #134e4a;
+  --color-sea-950: #042f2e;
+
+  /* ── Lapis / Persian blue palette ───────────── */
+  --color-lapis-50:  #eef2ff;
+  --color-lapis-100: #dde5ff;
+  --color-lapis-200: #c0ceff;
+  --color-lapis-300: #93a8f4;
+  --color-lapis-400: #6d7fe8;
+  --color-lapis-500: #4a5bd6;
+  --color-lapis-600: #1b4f8a;
+  --color-lapis-700: #163d6e;
+  --color-lapis-800: #0f2b52;
+  --color-lapis-900: #091a35;
+  --color-lapis-950: #050f1f;
+
+  /* ── Sand / Amber accent palette ────────────── */
+  --color-sand-50:  #fefce8;
+  --color-sand-100: #fef9c3;
+  --color-sand-200: #fde68a;
+  --color-sand-300: #fcd34d;
+  --color-sand-400: #f4c07a;
+  --color-sand-500: #e8a848;
+  --color-sand-600: #d4820e;
+  --color-sand-700: #b45309;
+  --color-sand-800: #92400e;
+  --color-sand-900: #78350f;
+
+  /* ── Typography ─────────────────────────────── */
+  --font-heading: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body:    var(--font-geist), system-ui, sans-serif;
+  --font-farsi:   var(--font-vazirmatn), Tahoma, sans-serif;
+}
+
+/* ── Base styles ─────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-sea-50);
+  color: #1a1a2e;
+}
+
+/* Farsi locale uses Vazirmatn throughout */
+[lang="fa"] body,
+[lang="fa"] input,
+[lang="fa"] button,
+[lang="fa"] textarea {
+  font-family: var(--font-farsi);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Farsi headings also use Vazirmatn */
+[lang="fa"] h1,
+[lang="fa"] h2,
+[lang="fa"] h3,
+[lang="fa"] h4,
+[lang="fa"] h5,
+[lang="fa"] h6 {
+  font-family: var(--font-farsi);
+  font-weight: 700;
+}

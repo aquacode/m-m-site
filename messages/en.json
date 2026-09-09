@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "journeys": "Journeys",
+    "blog": "Blog"
+  },
+  "home": {
+    "title": "Maryam & Michael",
+    "subtitle": "Our Story",
+    "heroImageAlt": "Maryam, Michael, and their son on one of their journeys",
+    "heroCta": "Explore our journeys",
+    "recentJourneys": "Recent Journeys",
+    "recentPosts": "From the Blog",
+    "viewAll": "View all"
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "We are a family of wanderers — drawn to the sea, to ancient cities, and to the stories found between."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A mosaic of moments from our travels",
+    "grid": "Grid",
+    "masonry": "Mosaic",
+    "noPhotos": "Photos coming soon."
+  },
+  "journeys": {
+    "title": "Journeys",
+    "subtitle": "Every trip tells a story",
+    "noJourneys": "Journeys coming soon.",
+    "viewJourney": "View journey",
+    "photos": "{count} photos"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Dispatches from the road and beyond",
+    "readMore": "Read more",
+    "noPosts": "Posts coming soon.",
+    "by": "By {author}",
+    "minuteRead": "{minutes} min read"
+  },
+  "footer": {
+    "copyright": "© {year} Maryam & Michael. All rights reserved.",
+    "tagline": "Mutual love of the sea."
+  },
+  "common": {
+    "loading": "Loading…",
+    "backToJourneys": "Back to Journeys",
+    "backToBlog": "Back to Blog"
+  }
+}
