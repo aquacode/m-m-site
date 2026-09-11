@@ -46,25 +46,23 @@ export default async function HomePage({ params }: Props) {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
+              href="/about"
+              className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white text-sm font-medium tracking-widest uppercase px-6 py-3 rounded-full backdrop-blur transition-all"
+            >
+              {t("secondaryAbout")}
+            </Link>
+            <Link
+              href="/bios"
+              className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white text-sm font-medium tracking-widest uppercase px-6 py-3 rounded-full backdrop-blur transition-all"
+            >
+              {t("secondaryBios")}
+            </Link>
+            <Link
               href="/login"
               className="inline-block bg-white text-lapis-800 hover:bg-sea-50 text-sm font-semibold tracking-widest uppercase px-8 py-3 rounded-full shadow-lg transition-colors"
             >
               {t("primaryCta")}
             </Link>
-            <div className="flex items-center gap-4">
-              <Link
-                href="/about"
-                className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white text-sm font-medium tracking-widest uppercase px-6 py-3 rounded-full backdrop-blur transition-all"
-              >
-                {t("secondaryAbout")}
-              </Link>
-              <Link
-                href="/bios"
-                className="inline-block bg-white/10 hover:bg-white/20 border border-white/30 text-white text-sm font-medium tracking-widest uppercase px-6 py-3 rounded-full backdrop-blur transition-all"
-              >
-                {t("secondaryBios")}
-              </Link>
-            </div>
           </div>
         </div>
       </section>
