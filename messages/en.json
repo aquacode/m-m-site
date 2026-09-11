@@ -1,23 +1,52 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
-    "gallery": "Gallery",
-    "journeys": "Journeys",
-    "blog": "Blog"
+    "about": "About",
+    "bios": "Bios",
+    "login": "Login"
   },
   "home": {
     "title": "Maryam & Michael",
-    "subtitle": "Our Story",
-    "heroImageAlt": "Maryam, Michael, and their son on one of their journeys",
-    "heroCta": "Explore our journeys",
-    "recentJourneys": "Recent Journeys",
-    "recentPosts": "From the Blog",
-    "viewAll": "View all"
+    "oneLiner": "Adventures in motion, memories in light.",
+    "welcome": "Welcome to our shared corner of the web — a private travel journal for family and friends. Log in when you have an invite, or learn a little about us first.",
+    "bannerHint": "Banner photo coming soon",
+    "heroImageAlt": "Maryam and Michael",
+    "primaryCta": "Log in",
+    "secondaryAbout": "About",
+    "secondaryBios": "Bios"
   },
   "about": {
     "title": "About Us",
     "intro": "We are a family of wanderers — drawn to the sea, to ancient cities, and to the stories found between."
+  },
+  "bios": {
+    "title": "Bios",
+    "intro": "A little about the two of us. These pages are placeholders — edit freely.",
+    "readBio": "Read bio",
+    "backToBios": "Back to Bios",
+    "editableHint": "Placeholder content — clearly editable",
+    "placeholderNote": "Replace this copy with a real bio when ready.",
+    "maryam": {
+      "name": "Maryam",
+      "blurb": "Traveler, storyteller, and lover of the sea.",
+      "body": "Maryam brings warmth, curiosity, and a gift for noticing the small moments that make a journey memorable. (Placeholder — edit this bio.)"
+    },
+    "michael": {
+      "name": "Michael",
+      "blurb": "Builder, photographer, and fellow ocean-seeker.",
+      "body": "Michael builds things, takes photos, and shares Maryam’s mutual love of the sea. (Placeholder — edit this bio.)"
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "inviteOnly": "Access is invite-only.",
+    "comingSoon": "Sign-in with Auth.js is coming soon. This page is a UI placeholder.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Log in",
+    "note": "Fields are disabled until authentication is connected."
   },
   "gallery": {
     "title": "Gallery",
@@ -43,7 +72,8 @@
   },
   "footer": {
     "copyright": "© {year} Maryam & Michael. All rights reserved.",
-    "tagline": "Mutual love of the sea."
+    "tagline": "Mutual love of the sea.",
+    "explore": "Explore"
   },
   "common": {
     "loading": "Loading…",
