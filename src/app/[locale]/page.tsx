@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -10,37 +11,28 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      {/* Landing hero — banner of Maryam & Michael (placeholder until real photo) */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sea-700 via-lapis-700 to-lapis-900" />
+        <Image
+          src="/images/banner.jpg"
+          alt="Maryam and Michael on the beach beneath a storm sky"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[center_35%]"
+        />
         <div
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 30% 60%, #2dd4bf 0%, transparent 50%), radial-gradient(circle at 75% 30%, #6d7fe8 0%, transparent 50%)",
-          }}
+          className="absolute inset-0 bg-gradient-to-b from-lapis-950/55 via-lapis-900/45 to-lapis-950/70"
           aria-hidden
         />
 
-        {/* Placeholder banner frame */}
-        <div className="absolute inset-x-0 top-0 h-full flex items-center justify-center pointer-events-none">
-          <div
-            className="w-[min(90%,42rem)] aspect-[4/3] rounded-3xl border border-white/15 bg-white/5 backdrop-blur-[2px]"
-            aria-hidden
-          />
-        </div>
-
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto py-24">
-          <p className="text-sea-200 text-xs sm:text-sm font-medium tracking-[0.25em] uppercase mb-4">
-            {t("bannerHint")}
-          </p>
           <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-light text-white tracking-wide mb-4 drop-shadow-lg">
             {t("title")}
           </h1>
-          <p className="text-sea-100/90 text-lg sm:text-xl font-light tracking-wide mb-6">
+          <p className="text-sea-100/90 text-lg sm:text-xl font-light tracking-wide mb-6 drop-shadow">
             {t("oneLiner")}
           </p>
-          <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-white/85 text-base sm:text-lg leading-relaxed mb-10 max-w-xl mx-auto drop-shadow">
             {t("welcome")}
           </p>
 
