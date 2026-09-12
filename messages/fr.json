@@ -17,7 +17,22 @@
   },
   "about": {
     "title": "À propos de nous",
-    "intro": "Nous sommes une famille de voyageurs — attirés par la mer, les villes anciennes et les histoires qui s'y trouvent."
+    "intro": "Nous sommes une famille de voyageurs — attirés par la mer, les villes anciennes et les histoires qui s'y trouvent.",
+    "imageAlt": "Maryam et Michael",
+    "sections": {
+      "ourStory": {
+        "title": "Notre histoire",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.ourStory.body)."
+      },
+      "howWeTravel": {
+        "title": "Comment nous voyageons",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.howWeTravel.body)."
+      },
+      "aboutThisSite": {
+        "title": "À propos de ce site",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.aboutThisSite.body)."
+      }
+    }
   },
   "bios": {
     "title": "Bios",
@@ -29,12 +44,14 @@
     "maryam": {
       "name": "Maryam",
       "blurb": "Voyageuse, conteuse, et amoureuse de la mer.",
-      "body": "Maryam apporte chaleur, curiosité et un don pour remarquer les petits moments qui rendent un voyage mémorable. (Texte provisoire — à modifier.)"
+      "body": "Maryam apporte chaleur, curiosité et un don pour remarquer les petits moments qui rendent un voyage mémorable. (Texte provisoire — à modifier.)",
+      "photoAlt": "Maryam"
     },
     "michael": {
       "name": "Michael",
       "blurb": "Bâtisseur, photographe, et compagnon d’océan.",
-      "body": "Michael construit, photographie, et partage avec Maryam un amour mutuel de la mer. (Texte provisoire — à modifier.)"
+      "body": "Michael construit, photographie, et partage avec Maryam un amour mutuel de la mer. (Texte provisoire — à modifier.)",
+      "photoAlt": "Michael"
     }
   },
   "login": {

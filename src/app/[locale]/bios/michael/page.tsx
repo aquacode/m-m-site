@@ -5,7 +5,13 @@ import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export const metadata: Metadata = { title: "Michael" };
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "bios" });
+  return { title: t("michael.name") };
+}
 
 export default async function MichaelBioPage({ params }: Props) {
   const { locale } = await params;
@@ -24,7 +30,7 @@ export default async function MichaelBioPage({ params }: Props) {
       <div className="relative w-full aspect-[4/5] max-h-[28rem] rounded-2xl overflow-hidden mb-10 bg-sand-100">
         <Image
           src="/images/michael.jpg"
-          alt={t("michael.name")}
+          alt={t("michael.photoAlt")}
           fill
           priority
           sizes="(max-width: 768px) 100vw, 48rem"
@@ -40,7 +46,7 @@ export default async function MichaelBioPage({ params }: Props) {
       </p>
 
       <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-        <p>{t("michael.body")}</p>
+        <p className="whitespace-pre-line">{t("michael.body")}</p>
         <p className="text-sea-500 italic text-base border-l-2 border-sea-200 pl-4">
           {t("placeholderNote")}
         </p>

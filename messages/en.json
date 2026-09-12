@@ -17,7 +17,22 @@
   },
   "about": {
     "title": "About Us",
-    "intro": "Destroying is easy, Creating is hard"
+    "intro": "Destroying is easy, Creating is hard",
+    "imageAlt": "Maryam and Michael",
+    "sections": {
+      "ourStory": {
+        "title": "Our Story",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.ourStory.body."
+      },
+      "howWeTravel": {
+        "title": "How We Travel",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.howWeTravel.body."
+      },
+      "aboutThisSite": {
+        "title": "About This Site",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.aboutThisSite.body."
+      }
+    }
   },
   "bios": {
     "title": "Bios",
@@ -29,12 +44,14 @@
     "maryam": {
       "name": "Maryam",
       "blurb": "Traveler, storyteller, and lover of the sea.",
-      "body": "Maryam brings warmth, curiosity, and a gift for noticing the small moments that make a journey memorable. (Placeholder — edit this bio.)"
+      "body": "Maryam brings warmth, curiosity, and a gift for noticing the small moments that make a journey memorable. (Placeholder — edit this bio.)",
+      "photoAlt": "Maryam"
     },
     "michael": {
       "name": "Michael",
       "blurb": "Builder, photographer, and fellow ocean-seeker.",
-      "body": "Michael builds things, takes photos, and shares Maryam’s mutual love of the sea. (Placeholder — edit this bio.)"
+      "body": "Michael builds things, takes photos, and shares Maryam’s mutual love of the sea. (Placeholder — edit this bio.)",
+      "photoAlt": "Michael"
     }
   },
   "login": {

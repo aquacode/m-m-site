@@ -5,7 +5,13 @@ import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export const metadata: Metadata = { title: "Bios" };
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "bios" });
+  return { title: t("title") };
+}
 
 export default async function BiosIndexPage({ params }: Props) {
   const { locale } = await params;
