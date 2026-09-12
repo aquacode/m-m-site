@@ -18,7 +18,7 @@ export default async function HomePage({ params }: Props) {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_35%]"
+          className="object-cover object-[center_75%]"
         />
         <div
           className="absolute inset-0 bg-gradient-to-b from-lapis-950/55 via-lapis-900/45 to-lapis-950/70"
