@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
@@ -16,12 +17,14 @@ export default async function BiosIndexPage({ params }: Props) {
       slug: "maryam" as const,
       name: t("maryam.name"),
       blurb: t("maryam.blurb"),
+      image: null as string | null,
       accent: "from-sea-200 to-lapis-200",
     },
     {
       slug: "michael" as const,
       name: t("michael.name"),
       blurb: t("michael.blurb"),
+      image: "/images/michael.jpg",
       accent: "from-lapis-200 to-sand-200",
     },
   ];
@@ -34,15 +37,27 @@ export default async function BiosIndexPage({ params }: Props) {
       <p className="text-lg text-gray-600 mb-12 max-w-2xl">{t("intro")}</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {people.map(({ slug, name, blurb, accent }) => (
+        {people.map(({ slug, name, blurb, accent, image }) => (
           <Link
             key={slug}
             href={`/bios/${slug}`}
             className="group rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow border border-sea-100"
           >
-            <div
-              className={`h-48 bg-gradient-to-br ${accent} group-hover:opacity-90 transition-opacity`}
-            />
+            <div className="relative h-56 overflow-hidden">
+              {image ? (
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover object-center group-hover:scale-[1.02] transition-transform duration-300"
+                />
+              ) : (
+                <div
+                  className={`h-full w-full bg-gradient-to-br ${accent} group-hover:opacity-90 transition-opacity`}
+                />
+              )}
+            </div>
             <div className="p-6">
               <h2 className="font-heading text-2xl text-lapis-800 font-semibold mb-2">
                 {name}

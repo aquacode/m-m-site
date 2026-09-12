@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
@@ -20,7 +21,16 @@ export default async function MichaelBioPage({ params }: Props) {
         ← {t("backToBios")}
       </Link>
 
-      <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-lapis-200 via-sea-200 to-sand-300 mb-10" />
+      <div className="relative w-full aspect-[4/5] max-h-[28rem] rounded-2xl overflow-hidden mb-10 bg-sand-100">
+        <Image
+          src="/images/michael.jpg"
+          alt={t("michael.name")}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 48rem"
+          className="object-cover object-center"
+        />
+      </div>
 
       <h1 className="font-heading text-5xl font-light text-lapis-800 mb-2">
         {t("michael.name")}
