@@ -7,9 +7,9 @@
   },
   "home": {
     "title": "Maryam & Michael",
-    "oneLiner": "Adventures in motion, memories in light.",
-    "welcome": "Welcome to our shared corner of the web — a private travel journal for family and friends. Log in when you have an invite, or learn a little about us first.",
-    "bannerHint": "Banner photo coming soon",
+    "oneLiner": "Through storms, beautiful adventures",
+    "welcome": "Welcome To Our Shared World",
+    "bannerHint": "Banner of Nature",
     "heroImageAlt": "Maryam and Michael",
     "primaryCta": "Log in",
     "secondaryAbout": "About",
@@ -17,7 +17,7 @@
   },
   "about": {
     "title": "About Us",
-    "intro": "We are a family of wanderers — drawn to the sea, to ancient cities, and to the stories found between."
+    "intro": "Destroying is easy, Creating is hard"
   },
   "bios": {
     "title": "Bios",
