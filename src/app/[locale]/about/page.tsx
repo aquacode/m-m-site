@@ -24,7 +24,7 @@ export default async function AboutPage({ params }: Props) {
           fill
           priority
           sizes="(max-width: 768px) 100vw, 48rem"
-          className="object-cover object-[center_30%]"
+          className="object-cover object-[center_25%]"
         />
       </div>
 
