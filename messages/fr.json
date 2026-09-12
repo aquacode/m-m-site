@@ -39,8 +39,8 @@
     "intro": "Un peu sur nous deux. Ces pages sont des espaces réservés — modifiez-les librement.",
     "readBio": "Lire la bio",
     "backToBios": "Retour aux bios",
-    "editableHint": "Contenu provisoire — clairement modifiable",
-    "placeholderNote": "Remplacez ce texte par une vraie bio quand vous êtes prêts.",
+    "editableHint": "",
+    "placeholderNote": "",
     "maryam": {
       "name": "Maryam",
       "blurb": "Voyageuse, conteuse, et amoureuse de la mer.",

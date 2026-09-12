@@ -17,6 +17,8 @@ export default async function MichaelBioPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "bios" });
+  const editableHint = t("editableHint");
+  const placeholderNote = t("placeholderNote");
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-20">
@@ -41,15 +43,21 @@ export default async function MichaelBioPage({ params }: Props) {
       <h1 className="font-heading text-5xl font-light text-lapis-800 mb-2">
         {t("michael.name")}
       </h1>
-      <p className="text-sea-600 text-sm uppercase tracking-widest mb-8">
-        {t("editableHint")}
-      </p>
+      {editableHint ? (
+        <p className="text-sea-600 text-sm uppercase tracking-widest mb-8">
+          {editableHint}
+        </p>
+      ) : (
+        <div className="mb-8" />
+      )}
 
       <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
         <p className="whitespace-pre-line">{t("michael.body")}</p>
-        <p className="text-sea-500 italic text-base border-l-2 border-sea-200 pl-4">
-          {t("placeholderNote")}
-        </p>
+        {placeholderNote ? (
+          <p className="text-sea-500 italic text-base border-l-2 border-sea-200 pl-4">
+            {placeholderNote}
+          </p>
+        ) : null}
       </div>
     </div>
   );

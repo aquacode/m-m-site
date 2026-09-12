@@ -39,8 +39,8 @@
     "intro": "Short bios for each of us",
     "readBio": "Read bio",
     "backToBios": "Back to Bios",
-    "editableHint": "Placeholder content — clearly editable",
-    "placeholderNote": "Replace this copy with a real bio when ready.",
+    "editableHint": "",
+    "placeholderNote": "",
     "maryam": {
       "name": "Maryam",
       "blurb": "Persian, lover of nature, rocks and the sea",
