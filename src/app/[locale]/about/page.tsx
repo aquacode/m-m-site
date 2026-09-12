@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -16,12 +17,19 @@ export default async function AboutPage({ params }: Props) {
         {t("title")}
       </h1>
 
-      {/* Placeholder portrait */}
-      <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-sea-200 via-lapis-200 to-sand-200 mb-10" />
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-10 bg-sand-100">
+        <Image
+          src="/images/about.jpg"
+          alt="Maryam and Michael on the beach"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 48rem"
+          className="object-cover object-[center_30%]"
+        />
+      </div>
 
       <p className="text-lg text-gray-700 leading-relaxed">{t("intro")}</p>
 
-      {/* Placeholder sections */}
       <div className="mt-12 space-y-8">
         {["Our Story", "How We Travel", "About This Site"].map((heading) => (
           <section key={heading}>
