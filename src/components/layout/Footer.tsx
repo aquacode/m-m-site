@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const year = new Date().getFullYear();
 
   return (
@@ -17,17 +18,17 @@ export default function Footer() {
             <p className="text-sea-300 text-sm">{t("tagline")}</p>
           </div>
 
-          {/* Quick links */}
+          {/* Public quick links */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-widest text-sea-400 mb-3">
-              Explore
+              {t("explore")}
             </h3>
             <ul className="space-y-2 text-sm">
               {[
-                { label: "Journeys", href: "/journeys" },
-                { label: "Gallery", href: "/gallery" },
-                { label: "Blog", href: "/blog" },
-                { label: "About", href: "/about" },
+                { label: tNav("home"), href: "/" as const },
+                { label: tNav("about"), href: "/about" as const },
+                { label: tNav("bios"), href: "/bios" as const },
+                { label: tNav("login"), href: "/login" as const },
               ].map(({ label, href }) => (
                 <li key={href}>
                   <Link

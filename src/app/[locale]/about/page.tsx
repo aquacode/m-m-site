@@ -1,9 +1,18 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ locale: string }> };
 
-export const metadata: Metadata = { title: "About Us" };
+const SECTION_KEYS = ["ourStory", "howWeTravel", "aboutThisSite"] as const;
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  return { title: t("title") };
+}
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
@@ -16,21 +25,28 @@ export default async function AboutPage({ params }: Props) {
         {t("title")}
       </h1>
 
-      {/* Placeholder portrait */}
-      <div className="w-full h-72 rounded-2xl bg-gradient-to-br from-sea-200 via-lapis-200 to-sand-200 mb-10" />
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-10 bg-sand-100">
+        <Image
+          src="/images/about.jpg"
+          alt={t("imageAlt")}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 48rem"
+          className="object-cover object-[center_25%]"
+        />
+      </div>
 
       <p className="text-lg text-gray-700 leading-relaxed">{t("intro")}</p>
 
-      {/* Placeholder sections */}
       <div className="mt-12 space-y-8">
-        {["Our Story", "How We Travel", "About This Site"].map((heading) => (
-          <section key={heading}>
+        {SECTION_KEYS.map((key) => (
+          <section key={key}>
             <h2 className="font-heading text-2xl text-lapis-700 mb-3">
-              {heading}
+              {t(`sections.${key}.title`)}
             </h2>
-            <div className="h-24 rounded-xl bg-sea-50 border border-sea-100 flex items-center justify-center text-sea-400 text-sm">
-              Content coming soon
-            </div>
+            <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+              {t(`sections.${key}.body`)}
+            </p>
           </section>
         ))}
       </div>

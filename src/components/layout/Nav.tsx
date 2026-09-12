@@ -7,12 +7,12 @@ import { routing } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+/** Public nav order (locked IA): Home · About · Bios · Login */
 const NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
-  { key: "gallery", href: "/gallery" },
-  { key: "journeys", href: "/journeys" },
-  { key: "blog", href: "/blog" },
+  { key: "bios", href: "/bios" },
+  { key: "login", href: "/login" },
 ] as const;
 
 const LOCALE_LABELS: Record<string, string> = {

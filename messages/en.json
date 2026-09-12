@@ -1,23 +1,69 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
-    "gallery": "Gallery",
-    "journeys": "Journeys",
-    "blog": "Blog"
+    "about": "About",
+    "bios": "Bios",
+    "login": "Login"
   },
   "home": {
     "title": "Maryam & Michael",
-    "subtitle": "Our Story",
-    "heroImageAlt": "Maryam, Michael, and their son on one of their journeys",
-    "heroCta": "Explore our journeys",
-    "recentJourneys": "Recent Journeys",
-    "recentPosts": "From the Blog",
-    "viewAll": "View all"
+    "oneLiner": "Through storms, beautiful adventures",
+    "welcome": "Welcome To Our Shared World",
+    "bannerHint": "Banner of Nature",
+    "heroImageAlt": "Maryam and Michael",
+    "primaryCta": "Log in",
+    "secondaryAbout": "About",
+    "secondaryBios": "Bios"
   },
   "about": {
     "title": "About Us",
-    "intro": "We are a family of wanderers — drawn to the sea, to ancient cities, and to the stories found between."
+    "intro": "Destroying is easy, Creating is hard",
+    "imageAlt": "Maryam and Michael",
+    "sections": {
+      "ourStory": {
+        "title": "Our Story",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.ourStory.body."
+      },
+      "howWeTravel": {
+        "title": "How We Travel",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.howWeTravel.body."
+      },
+      "aboutThisSite": {
+        "title": "About This Site",
+        "body": "Content coming soon — edit this in messages/en.json under about.sections.aboutThisSite.body."
+      }
+    }
+  },
+  "bios": {
+    "title": "Bios",
+    "intro": "Short bios for each of us",
+    "readBio": "Read bio",
+    "backToBios": "Back to Bios",
+    "editableHint": "Placeholder content — clearly editable",
+    "placeholderNote": "Replace this copy with a real bio when ready.",
+    "maryam": {
+      "name": "Maryam",
+      "blurb": "Persian, lover of nature, rocks and the sea",
+      "body": "I am from Iran and speak Farsi, French and English. I've been in America for 28 years and have been teaching for 20",
+      "photoAlt": "Maryam"
+    },
+    "michael": {
+      "name": "Michael",
+      "blurb": "American, loves blue, green and the Sun",
+      "body": "Born in Chicago to second generation European ancestors",
+      "photoAlt": "Michael"
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "inviteOnly": "Access is by invite-only",
+    "comingSoon": "Sign-in is coming soon",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Log in",
+    "note": "Fields are disabled until authentication is connected."
   },
   "gallery": {
     "title": "Gallery",
@@ -43,7 +89,8 @@
   },
   "footer": {
     "copyright": "© {year} Maryam & Michael. All rights reserved.",
-    "tagline": "Mutual love of the sea."
+    "tagline": "Mutual love of the sea.",
+    "explore": "Explore"
   },
   "common": {
     "loading": "Loading…",

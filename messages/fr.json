@@ -2,22 +2,68 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "gallery": "Galerie",
-    "journeys": "Voyages",
-    "blog": "Blog"
+    "bios": "Bios",
+    "login": "Connexion"
   },
   "home": {
     "title": "Maryam & Michael",
-    "subtitle": "Notre histoire",
-    "heroImageAlt": "Maryam, Michael et leur fils lors d'un de leurs voyages",
-    "heroCta": "Explorer nos voyages",
-    "recentJourneys": "Voyages récents",
-    "recentPosts": "Du Blog",
-    "viewAll": "Voir tout"
+    "oneLiner": "Aventures en mouvement, souvenirs en lumière.",
+    "welcome": "Bienvenue dans notre coin du web — un carnet de voyage privé pour la famille et les amis. Connectez-vous si vous avez une invitation, ou découvrez-nous d’abord.",
+    "bannerHint": "Photo de bannière à venir",
+    "heroImageAlt": "Maryam et Michael",
+    "primaryCta": "Connexion",
+    "secondaryAbout": "À propos",
+    "secondaryBios": "Bios"
   },
   "about": {
     "title": "À propos de nous",
-    "intro": "Nous sommes une famille de voyageurs — attirés par la mer, les villes anciennes et les histoires qui s'y trouvent."
+    "intro": "Nous sommes une famille de voyageurs — attirés par la mer, les villes anciennes et les histoires qui s'y trouvent.",
+    "imageAlt": "Maryam et Michael",
+    "sections": {
+      "ourStory": {
+        "title": "Notre histoire",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.ourStory.body)."
+      },
+      "howWeTravel": {
+        "title": "Comment nous voyageons",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.howWeTravel.body)."
+      },
+      "aboutThisSite": {
+        "title": "À propos de ce site",
+        "body": "Contenu à venir — modifiez messages/fr.json (about.sections.aboutThisSite.body)."
+      }
+    }
+  },
+  "bios": {
+    "title": "Bios",
+    "intro": "Un peu sur nous deux. Ces pages sont des espaces réservés — modifiez-les librement.",
+    "readBio": "Lire la bio",
+    "backToBios": "Retour aux bios",
+    "editableHint": "Contenu provisoire — clairement modifiable",
+    "placeholderNote": "Remplacez ce texte par une vraie bio quand vous êtes prêts.",
+    "maryam": {
+      "name": "Maryam",
+      "blurb": "Voyageuse, conteuse, et amoureuse de la mer.",
+      "body": "Maryam apporte chaleur, curiosité et un don pour remarquer les petits moments qui rendent un voyage mémorable. (Texte provisoire — à modifier.)",
+      "photoAlt": "Maryam"
+    },
+    "michael": {
+      "name": "Michael",
+      "blurb": "Bâtisseur, photographe, et compagnon d’océan.",
+      "body": "Michael construit, photographie, et partage avec Maryam un amour mutuel de la mer. (Texte provisoire — à modifier.)",
+      "photoAlt": "Michael"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "inviteOnly": "L’accès est sur invitation uniquement.",
+    "comingSoon": "La connexion avec Auth.js arrive bientôt. Cette page est un placeholder d’interface.",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Se connecter",
+    "note": "Les champs sont désactivés jusqu’à ce que l’authentification soit branchée."
   },
   "gallery": {
     "title": "Galerie",
@@ -43,7 +89,8 @@
   },
   "footer": {
     "copyright": "© {year} Maryam & Michael. Tous droits réservés.",
-    "tagline": "Un amour mutuel de la mer."
+    "tagline": "Un amour mutuel de la mer.",
+    "explore": "Explorer"
   },
   "common": {
     "loading": "Chargement…",
