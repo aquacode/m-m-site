@@ -36,28 +36,28 @@
   },
   "bios": {
     "title": "Bios",
-    "intro": "A little about the two of us. These pages are placeholders — edit freely.",
+    "intro": "Short bios for each of us",
     "readBio": "Read bio",
     "backToBios": "Back to Bios",
     "editableHint": "Placeholder content — clearly editable",
     "placeholderNote": "Replace this copy with a real bio when ready.",
     "maryam": {
       "name": "Maryam",
-      "blurb": "Traveler, storyteller, and lover of the sea.",
-      "body": "Maryam brings warmth, curiosity, and a gift for noticing the small moments that make a journey memorable. (Placeholder — edit this bio.)",
+      "blurb": "Persian, lover of nature, rocks and the sea",
+      "body": "I am from Iran and speak Farsi, French and English. I've been in America for 28 years and have been teaching for 20",
       "photoAlt": "Maryam"
     },
     "michael": {
       "name": "Michael",
-      "blurb": "Builder, photographer, and fellow ocean-seeker.",
-      "body": "Michael builds things, takes photos, and shares Maryam’s mutual love of the sea. (Placeholder — edit this bio.)",
+      "blurb": "American, loves blue, green and the Sun",
+      "body": "Born in Chicago to second generation European ancestors",
       "photoAlt": "Michael"
     }
   },
   "login": {
     "title": "Log in",
-    "inviteOnly": "Access is invite-only.",
-    "comingSoon": "Sign-in with Auth.js is coming soon. This page is a UI placeholder.",
+    "inviteOnly": "Access is by invite-only",
+    "comingSoon": "Sign-in is coming soon",
     "email": "Email",
     "emailPlaceholder": "you@example.com",
     "password": "Password",
