@@ -17,7 +17,7 @@ export default async function BiosIndexPage({ params }: Props) {
       slug: "maryam" as const,
       name: t("maryam.name"),
       blurb: t("maryam.blurb"),
-      image: null as string | null,
+      image: "/images/maryam.png" as string | null,
       accent: "from-sea-200 to-lapis-200",
     },
     {
