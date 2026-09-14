@@ -22,15 +22,15 @@
     "sections": {
       "ourStory": {
         "title": "Our Story",
-        "body": "Content coming soon — edit this in messages/en.json under about.sections.ourStory.body."
+        "body": "What's the probability that an American boy from the soutside of Chicago meets a Persian girl from Iran?"
       },
       "howWeTravel": {
-        "title": "How We Travel",
-        "body": "Content coming soon — edit this in messages/en.json under about.sections.howWeTravel.body."
+        "title": "Common Ground",
+        "body": "Sun - Social Etiquette - Nature"
       },
       "aboutThisSite": {
         "title": "About This Site",
-        "body": "Content coming soon — edit this in messages/en.json under about.sections.aboutThisSite.body."
+        "body": "M & M"
       }
     }
   },
