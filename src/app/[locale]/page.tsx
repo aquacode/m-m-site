@@ -11,14 +11,14 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-lapis-950">
+      <section className="relative min-h-[75vh] w-full flex items-center justify-center overflow-hidden bg-lapis-950">
         <Image
           src="/images/banner.jpg"
           alt="Maryam and Michael on the beach beneath a storm sky"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-bottom scale-[0.88] origin-bottom"
+          className="object-cover object-center"
         />
         <div
           className="absolute inset-0 bg-gradient-to-b from-lapis-950/55 via-lapis-900/45 to-lapis-950/70"
