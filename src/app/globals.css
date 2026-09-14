@@ -53,8 +53,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-sea-50);
-  color: #1a1a2e;
+  background-color: var(--color-lapis-950);
+  color: #e2e8f0;
 }
 
 /* Farsi locale uses Vazirmatn throughout */

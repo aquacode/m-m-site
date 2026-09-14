@@ -7,12 +7,12 @@ import { routing } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+/** Public nav order (locked IA): Home · About · Bios · Login */
 const NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
-  { key: "gallery", href: "/gallery" },
-  { key: "journeys", href: "/journeys" },
-  { key: "blog", href: "/blog" },
+  { key: "bios", href: "/bios" },
+  { key: "login", href: "/login" },
 ] as const;
 
 const LOCALE_LABELS: Record<string, string> = {
@@ -21,8 +21,6 @@ const LOCALE_LABELS: Record<string, string> = {
   fa: "فا",
 };
 
-// Strip the locale prefix from a Next.js pathname.
-// e.g. "/fr/gallery" → "/gallery",  "/en" → "/"
 const LOCALE_PREFIX_RE = new RegExp(
   `^/(${routing.locales.join("|")})(?=/|$)`
 );
@@ -32,23 +30,20 @@ function stripLocale(fullPath: string): string {
 
 export default function Nav({ locale }: { locale: string }) {
   const t = useTranslations("nav");
-  // usePathname from next/navigation returns the full path including locale prefix
   const fullPathname = usePathname();
   const pathname = stripLocale(fullPathname);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-sea-100">
+    <header className="sticky top-0 z-50 bg-lapis-950/90 backdrop-blur border-b border-white/10">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        {/* Logo */}
         <Link
           href="/"
-          className="font-heading text-2xl font-semibold text-lapis-700 tracking-wide hover:text-sea-600 transition-colors"
+          className="font-heading text-2xl font-semibold text-white tracking-wide hover:text-sea-300 transition-colors"
         >
-          M <span className="text-sea-500">&</span> M
+          M <span className="text-sea-400">&</span> M
         </Link>
 
-        {/* Desktop nav links */}
         <ul className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map(({ key, href }) => {
             const isActive =
@@ -59,8 +54,8 @@ export default function Nav({ locale }: { locale: string }) {
                   href={href}
                   className={`text-sm font-medium tracking-wide transition-colors ${
                     isActive
-                      ? "text-sea-600 border-b-2 border-sea-400 pb-0.5"
-                      : "text-gray-600 hover:text-lapis-700"
+                      ? "text-sea-300 border-b-2 border-sea-400 pb-0.5"
+                      : "text-sea-100/70 hover:text-white"
                   }`}
                 >
                   {t(key)}
@@ -70,10 +65,8 @@ export default function Nav({ locale }: { locale: string }) {
           })}
         </ul>
 
-        {/* Locale switcher + mobile toggle */}
         <div className="flex items-center gap-3">
-          {/* Locale switcher: build explicit /{locale}{path} URLs */}
-          <div className="flex items-center gap-1 rounded-full border border-sea-200 px-2 py-1">
+          <div className="flex items-center gap-1 rounded-full border border-white/15 px-2 py-1">
             {routing.locales.map((loc) => {
               const isActive = loc === locale;
               const localeHref = `/${loc}${pathname === "/" ? "" : pathname}`;
@@ -88,7 +81,7 @@ export default function Nav({ locale }: { locale: string }) {
                 <NextLink
                   key={loc}
                   href={localeHref}
-                  className="text-xs px-1.5 py-0.5 rounded-full font-medium text-gray-500 hover:text-lapis-700 transition-colors"
+                  className="text-xs px-1.5 py-0.5 rounded-full font-medium text-sea-200/70 hover:text-white transition-colors"
                   aria-label={`Switch to ${loc}`}
                 >
                   {LOCALE_LABELS[loc]}
@@ -97,9 +90,8 @@ export default function Nav({ locale }: { locale: string }) {
             })}
           </div>
 
-          {/* Mobile hamburger */}
           <button
-            className="md:hidden p-1 text-gray-600 hover:text-lapis-700"
+            className="md:hidden p-1 text-sea-100 hover:text-white"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -110,15 +102,14 @@ export default function Nav({ locale }: { locale: string }) {
         </div>
       </nav>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-sea-100 bg-white">
+        <div className="md:hidden border-t border-white/10 bg-lapis-950">
           <ul className="flex flex-col px-4 py-3 gap-3">
             {NAV_LINKS.map(({ key, href }) => (
               <li key={key}>
                 <Link
                   href={href}
-                  className="block text-sm font-medium text-gray-700 hover:text-sea-600 py-1"
+                  className="block text-sm font-medium text-sea-100 hover:text-sea-300 py-1"
                   onClick={() => setMenuOpen(false)}
                 >
                   {t(key)}
